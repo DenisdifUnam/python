@@ -1,0 +1,10 @@
+# Este archivo indica cómo y dónde se va a iniciar el contenedor
+
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      
